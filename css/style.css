@@ -320,10 +320,12 @@ body {
 	position: relative;
 	gap: 2rem;
 	height: 100%;
+	min-height: 35rem;
 	background-color: #b1a1ed;
 	padding: 20px;
 	overflow: hidden;
 }
+
 .contact-info {
 	display: flex;
 	flex-direction: column;
@@ -400,8 +402,8 @@ textarea {
 	left: 6rem;
 }
 .circle3 {
-	width: 138px;
-	height: 138px;
+	width: 118px;
+	height: 118px;
 	background-color: #48484880;
 	bottom: 5rem;
 	right: 2.5rem;
@@ -413,4 +415,45 @@ textarea {
 	background-color: #c801f9;
 	bottom: -6.3rem;
 	right: -7rem;
+}
+
+@media screen and (width < 992px) {
+	.contact-card {
+		gap: 0rem;
+		height: 100%;
+		min-height: 30rem;
+		background-color: #b1a1ed;
+		padding: 10px;
+		overflow: hidden;
+	}
+
+	.circle1 {
+		width: 200px;
+		height: 200px;
+		background-color: #ffffff;
+		bottom: -80px;
+		left: -80px;
+	}
+	.circle2 {
+		width: 100px;
+		height: 100px;
+		background-color: #eda1c2;
+		bottom: -40px;
+		left: 6rem;
+	}
+	.circle3 {
+		width: 100px;
+		height: 100px;
+		background-color: #48484880;
+		bottom: 2.2rem;
+		right: 2.5rem;
+		z-index: 2;
+	}
+	.circle4 {
+		width: 200px;
+		height: 200px;
+		background-color: #c801f9;
+		bottom: -5rem;
+		right: -5rem;
+	}
 }
