@@ -37,7 +37,6 @@ body {
 	margin: 0 auto;
 }
 
-/* Frame styling */
 .slider-frame {
 	position: relative;
 	width: 100%;
@@ -47,7 +46,6 @@ body {
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-/* Create curved border */
 .slider-frame::after {
 	content: '';
 	position: absolute;
@@ -61,22 +59,19 @@ body {
 	z-index: 2;
 }
 
-/* Updated slider container */
+
 .slider {
 	position: relative;
 	border-radius: 20px;
-	/* overflow: hidden; */
 	aspect-ratio: 16/9;
 }
 
-/* Modified slides wrapper for peek effect */
 .slider-section {
 	overflow: hidden;
 }
 
 .slides-container {
 	position: relative;
-	/* overflow: hidden; */
 	border-radius: 20px;
 	height: 100%;
 }
@@ -89,7 +84,7 @@ body {
 }
 
 .slide {
-	min-width: 100%; /* Width of main slide */
+	min-width: 100%;
 	height: 100%;
 	background-size: cover;
 	background-position: center;
@@ -176,7 +171,6 @@ body {
 	background-color: #e60000;
 }
 
-/* Updated navigation buttons */
 .slider-nav {
 	position: absolute;
 	width: calc(100% + 40px);
