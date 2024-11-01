@@ -17,3 +17,133 @@
 	height: 100%;
 	object-fit: cover;
 }
+
+/* Testimonial */
+.testimonial-section {
+	margin-block: 8rem;
+}
+
+.testimonial-section > h2 {
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	font-family: "Rubik", sans-serif;
+	font-size: 3rem;
+}
+
+.testimonial-section > p {
+	text-align: center;
+	font-family: "Rubik", sans-serif;
+	font-size: 1.5rem;
+	color: #4F5665;
+}
+
+.testimonial-wrapper {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1400px;
+	padding-inline: 1rem;
+}
+
+.testimonial-slider {
+	display: flex;
+	gap: 2rem;
+	padding-block: 2rem;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	overflow-x: auto;
+	scroll-snap-align: start;
+}
+
+.testimonial-slider::-webkit-scrollbar {
+	display: none;
+}
+
+.testimonial-card {
+	flex: 0 0 calc(35% - 2.5rem); /* 4 cards per view */
+	scroll-snap-align: center;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	box-sizing: border-box;
+}
+
+.testimonial-profile-img {
+	margin-bottom: 1rem;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+}
+
+.testimonial-profile-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.testimonial-card-title {
+	font-size: 1.3em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	width: 5%;
+}
+
+.carousel-control-next {
+	rotate: 180deg;
+	right: -5rem;
+}
+
+.carousel-control-prev {
+	left: -5rem;
+}
+
+@media screen and (width < 1200px) {
+	.testimonial-card {
+		flex: 1 0 32%;
+	}
+
+	.carousel-control-prev {
+		left: -4%;
+	}
+
+	.carousel-control-next {
+		right: -4%;
+	}
+}
+
+@media screen and (width < 992px) {
+	.testimonial-card {
+		flex: 1 0 50%;
+	}
+
+	.carousel-control-prev {
+		left: -6%;
+	}
+
+	.carousel-control-next {
+		right: -6%;
+	}
+}
+
+@media screen and (width < 768px) {
+	.testimonial-card {
+		flex: 1 0 100%;
+	}
+}
+
+@media screen and (width < 600px) {
+	.carousel-control-prev {
+		display: none;
+	}
+
+	.carousel-control-next {
+		display: none;
+	}
+}
