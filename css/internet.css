@@ -148,12 +148,8 @@
 	margin-block: 8rem;
 }
 
-.testimonial-section > h2 {
-	text-align: center;
-	color: #000;
-	font-weight: bold;
+.testimonial-section > h1 {
 	font-family: "Rubik", sans-serif;
-	font-size: 3rem;
 }
 
 .testimonial-section > p {
@@ -166,8 +162,7 @@
 .testimonial-wrapper {
 	position: relative;
 	margin: 0 auto;
-	max-width: 1400px;
-	padding-inline: 1rem;
+	max-width: 1200px;
 }
 
 .testimonial-slider {
@@ -215,18 +210,10 @@
 	font-size: 1.3em;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-	width: 5%;
-}
-
-.carousel-control-next {
-	rotate: 180deg;
-	right: -5rem;
-}
-
-.carousel-control-prev {
-	left: -5rem;
+@media screen and (width < 1400px) {
+	.testimonial-wrapper {
+		max-width: 90vw;
+	}
 }
 
 @media screen and (width < 1200px) {
