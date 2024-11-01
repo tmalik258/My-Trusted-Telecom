@@ -1,4 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+html, body {
+	background: linear-gradient(180deg, #ffffff 0%, #b1a1ed 100%);
+	font-family: "Poppins", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Contact Us Form */
+.contact-section {
+	padding: 50px 0;
+	text-align: center;
+}
+.contact-section h2 {
+	color: #000;
+	font-weight: bold;
+}
+
+.contact-section .container {
+	background-color: #000;
+}
+.contact-card {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	height: 100%;
+	background-color: #B1A1ED;
+	padding: 20px;
+	overflow: hidden;
+}
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	color: #fff;
+	font-size: 16px;
+}
+
+.contact-info p {
+	display: flex;
+	gap: 1.3rem;
+}
+
+input, .form-control, .form-control:focus {
+	color: #fff;
+	background: none;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #fff;
+	border-radius: 0;
+	padding-inline: 0;
+}
+
+label {
+	font-size: 0.85rem;
+}
+
+.form-control::placeholder {
+	color: #909090;
+}
+
+form button[type="submit"] {
+	width: 10rem;
+	margin-left: auto;
+}
+
+textarea {
+	resize: none;
+}
+
+.btn-dark {
+	border-radius: 5px;
+	background-color: #B1A1ED;
+	border: none;
+	color: #fff;
+	/* font-weight: bold; */
+}
+
+.btn-dark:hover {
+	background-color: #9789c9;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+	border-radius: 50%;
+	position: absolute;
+}
+.circle1 {
+	width: 269px;
+	height: 269px;
+	background-color: #FFFFFF;
+	bottom: -80px;
+	left: -100px;
+}
+.circle2 {
+	width: 138px;
+	height: 138px;
+	background-color: #EDA1C2;
+	bottom: -40px;
+	left: 6rem;
+}
+.circle3 {
+	width: 138px;
+	height: 138px;
+	background-color: #48484880;
+	bottom: 5rem;
+	right: 2.5rem;
+	z-index: 2;
+}
+.circle4 {
+	width: 269px;
+	height: 269px;
+	background-color: #C801F9;
+	bottom: -6.3rem;
+	right: -7rem;
 }

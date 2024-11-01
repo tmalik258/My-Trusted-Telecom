@@ -13,11 +13,180 @@
 			crossorigin="anonymous"
 		/>
 
+		<!-- Font Awesome CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/footer.css" />
 	</head>
 	<body>
+		<section class="contact-section">
+			<h2>Contact us</h2>
+			<p>Let us help your business to move forward.</p>
+			<div class="container rounded-3 p-2 mt-5">
+				<div class="row">
+					<!-- Contact Information Card -->
+					<div class="col-md-5">
+						<div
+							class="contact-card rounded-3 text-start position-relative p-4 text-white"
+						>
+							<div>
+								<h4>Contact Information</h4>
+								<p>Say something to start a live chat!</p>
+							</div>
+							<div class="contact-info mt-4">
+								<p>
+									<i class="fas fa-phone"></i> +1012 3456 789
+								</p>
+								<p>
+									<i class="fas fa-envelope"></i>
+									demo@gmail.com
+								</p>
+								<p>
+									<i class="fas fa-map-marker-alt"></i> 132
+									Dartmouth Street Boston, Massachusetts 02156
+									United States
+								</p>
+							</div>
+							<!-- Decorative Circles -->
+							<div class="circle1"></div>
+							<div class="circle2"></div>
+							<div class="circle3"></div>
+							<div class="circle4"></div>
+						</div>
+					</div>
+
+					<!-- Contact Form -->
+					<div class="col-md-7">
+						<form
+							class="p-4 text-white d-flex flex-column gap-4 text-start rounded"
+						>
+							<div class="row">
+								<div class="col mb-3">
+									<label for="firstName">First Name</label>
+									<input
+										type="email"
+										class="form-control"
+										id="firstName"
+									/>
+								</div>
+								<div class="col">
+									<label for="lastName">Last Name</label>
+									<input
+										type="password"
+										class="form-control"
+										id="lastName"
+									/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<label for="email">Email</label>
+									<input
+										type="email"
+										class="form-control"
+										id="email" />
+								</div>
+								<div class="col">
+									<label for="phone">Phone Number</label>
+									<input
+										type="text"
+										class="form-control"
+										id="phone"
+										placeholder="+1 012 3456 789"
+									/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label>Select Subject</label>
+								<div class="mt-3">
+									<div class="form-check form-check-inline">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="subject"
+											id="subject1"
+											value="General Inquiry"
+											checked
+										/>
+										<label
+											class="form-check-label"
+											for="subject1"
+											>General Inquiry</label
+										>
+									</div>
+									<div class="form-check form-check-inline">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="subject"
+											id="subject2"
+											value="General Inquiry"
+										/>
+										<label
+											class="form-check-label"
+											for="subject2"
+											>General Inquiry</label
+										>
+									</div>
+									<div class="form-check form-check-inline">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="subject"
+											id="subject3"
+											value="General Inquiry"
+										/>
+										<label
+											class="form-check-label"
+											for="subject3"
+											>General Inquiry</label
+										>
+									</div>
+									<div class="form-check form-check-inline">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="subject"
+											id="subject4"
+											value="General Inquiry"
+										/>
+										<label
+											class="form-check-label"
+											for="subject4"
+											>General Inquiry</label
+										>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="message">Message</label>
+								<textarea
+									class="form-control"
+									id="message"
+									rows="5"
+									placeholder="Write your message.."
+								></textarea>
+							</div>
+							<button
+								type="submit"
+								class="btn btn-dark btn-block"
+							>
+								Send Message
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<div class="footer-container" data-bs-theme="dark">
 			<div class="container">
 				<footer class="row py-5 my-5">
@@ -115,8 +284,8 @@
 								<a
 									href="#"
 									class="nav-link p-0 text-body-secondary"
-									>Download </a
-								>
+									>Download
+								</a>
 							</li>
 							<li class="nav-item mb-2">
 								<a
