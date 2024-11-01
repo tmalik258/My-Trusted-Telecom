@@ -8,3 +8,12 @@
 .footer-container p.footer-text {
 	color: #BDBDBD;
 }
+
+@media screen and (width < 600px) {
+	.footer-container {
+		margin-top: 4rem;
+		background: #000000;
+		color: #fff;
+		margin-bottom: -3rem;
+	}
+}

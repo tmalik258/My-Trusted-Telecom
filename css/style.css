@@ -12,6 +12,12 @@ body {
 	font-style: normal;
 }
 
+@media screen and (width < 600px) {
+	html, body {
+		overflow-x: hidden;
+	}
+}
+
 /* Slider Section */
 .slider-container {
 	max-width: 1200px;
@@ -229,6 +235,13 @@ body {
 	background: white;
 }
 
+@media screen and (width < 1200px) {
+	.slide {
+		min-width: 90%;
+		margin: 0 10px;
+	}
+}
+
 /* Steps Section */
 .steps-section {
 	font-family: "Rubik", sans-serif;
@@ -253,6 +266,19 @@ body {
 	gap: 6rem;
 }
 
+.steps-section .step:nth-of-type(1) .number svg {
+	width: 134px;
+	height: 175px;
+}
+
+.steps-section .step:nth-of-type(2) .number svg {
+	width: 134px;
+}
+
+.steps-section .step:nth-of-type(3) .number svg {
+	width: 134px;
+}
+
 .steps-section .step .step-details {
 	display: flex;
 	flex-direction: column;
@@ -262,17 +288,84 @@ body {
 
 .steps-section .step .step-details h2 {
 	color: #724cff;
-	font-size: 3.5rem;
+	font-size: 3rem;
 }
 
 .steps-section .step .step-details p {
 	font-size: 1.5rem;
 }
 
-@media screen and (width < 1200px) {
-	.slide {
-		min-width: 90%;
-		margin: 0 10px;
+@media screen and (width < 992px) {
+	.steps-section .steps-container {
+		gap: 3rem;
+	}
+
+	.steps-section .step {
+		gap: 4rem;
+	}
+
+	.steps-section .step:nth-of-type(1) .number svg {
+		width: 100px;
+		height: 135px;
+	}
+	
+	.steps-section .step:nth-of-type(2) .number svg {
+		width: 100px;
+	}
+	
+	.steps-section .step:nth-of-type(3) .number svg {
+		width: 100px;
+	}
+
+	.steps-section .step .step-details h2 {
+		color: #724cff;
+		font-size: 2.2rem;
+	}
+	
+	.steps-section .step .step-details p {
+		font-size: 1rem;
+	}
+
+	.steps-section .step .step-details {
+		gap: .6rem;
+	}
+}
+
+@media screen and (width < 600px) {
+	.steps-section {
+		width: 90%;
+	}
+}
+
+@media screen and (width < 500px) {
+	.steps-section .steps-container {
+		gap: 1rem;
+	}
+
+	.steps-section .step {
+		gap: 2rem;
+	}
+
+	.steps-section .step:nth-of-type(1) .number svg {
+		width: 70px;
+		height: 95px;
+	}
+	
+	.steps-section .step:nth-of-type(2) .number svg {
+		width: 70px;
+	}
+	
+	.steps-section .step:nth-of-type(3) .number svg {
+		width: 70px;
+	}
+
+	.steps-section .step .step-details h2 {
+		color: #724cff;
+		font-size: 1.6rem;
+	}
+
+	.steps-section .step .step-details {
+		gap: .2rem;
 	}
 }
 
@@ -294,6 +387,19 @@ body {
 .partners-section img {
 	width: 100%;
 }
+
+@media screen and (width < 1200px) {
+	.partners-section {
+		margin-block: 5rem;
+	}
+}
+
+@media screen and (width < 600px) {
+	.partners-section {
+		margin-block: 2rem;
+	}
+}
+
 /* Contact Us Form */
 .contact-section {
 	padding: 50px 0;
@@ -456,4 +562,10 @@ textarea {
 		bottom: -5rem;
 		right: -5rem;
 	}
+
+	.contact-section {
+		padding-bottom: 5px;
+		text-align: center;
+	}
+	
 }
