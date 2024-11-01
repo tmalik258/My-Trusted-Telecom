@@ -59,6 +59,7 @@
 .bundles-section .bundle {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 	justify-content: space-between;
 	width: 550px;
 	height: 700px;
@@ -73,6 +74,8 @@
 	top: 0;
 	left: 0;
 	object-fit: cover;
+	opacity: .9;
+	filter: blur(1px);
 	width: 100%;
 	height: 100%;
 	z-index: -1;
@@ -92,7 +95,6 @@
 	.bundles-section .bundle {
 		width: fit-content;
 		height: 600px;
-		/* padding: 2rem; */
 	}
 
 	.bundles-section .bundle h2{
@@ -108,19 +110,36 @@
 
 @media screen and (width < 1200px) {
 	.bundles-section .bundle {
-		width: fit-content;
-		height: 600px;
+		height: 500px;
 		padding: 2rem;
 	}
 
 	.bundles-section .bundle h2{
 		font-size: 2rem;
-		font-weight: 600;
+		font-weight: 500;
 	}
 	
 	.bundles-section .bundle h3{
 		font-size: 2.5rem;
-		font-weight: 700;
+		font-weight: 600;
+	}
+}
+
+@media screen and (width < 992px) {
+	.bundle-container {
+		flex-wrap: wrap;
+	}
+
+	.bundles-section .bundle {
+		height: 400px;
+	}
+
+	.bundles-section .bundle h2{
+		font-size: 1.5rem;
+	}
+	
+	.bundles-section .bundle h3{
+		font-size: 2rem;
 	}
 }
 
