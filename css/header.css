@@ -1,0 +1,13 @@
+.header-container {
+	background: #000;
+}
+
+header .nav-link {
+	color: #fff;
+	border-bottom: 1px solid transparent;
+}
+
+header .nav-link:is(.active, :hover) {
+	color: #B1A1ED;
+	border-bottom: 1px solid #B1A1ED;
+}

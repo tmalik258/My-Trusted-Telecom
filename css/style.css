@@ -15,6 +15,8 @@ body {
 /* Steps Section */
 .steps-section {
 	font-family: "Rubik", sans-serif;
+	width: 70%;
+	margin-inline: auto;
 }
 
 .steps-section > p {
@@ -25,13 +27,13 @@ body {
 	color: #4F4F4F;
 }
 
-.steps-section .step {
-	display: flex;
+.steps-section .steps-container {
 	gap: 6rem;
 }
 
-.steps-section .step .number {
-	width: 6rem;
+.steps-section .step {
+	display: flex;
+	gap: 6rem;
 }
 
 .steps-section .step .step-details {
@@ -39,7 +41,6 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 2rem;
-	width: 50%;
 }
 
 .steps-section .step .step-details h2 {
@@ -47,7 +48,15 @@ body {
 	font-size: 3.5rem;
 }
 
+.steps-section .step .step-details p {
+	font-size: 1.5rem;
+}
+
 /* Partners Section */
+.partners-section {
+	margin-block: 8rem;
+}
+
 .partners-section h2 {
 	color: #000;
 	font-weight: bold;

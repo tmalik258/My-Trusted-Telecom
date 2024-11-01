@@ -1,6 +1,8 @@
 .footer-container {
+	margin-top: 8rem;
 	background: #000000;
 	color: #fff;
+	margin-bottom: -3rem;
 }
 
 .footer-container p.footer-text {
