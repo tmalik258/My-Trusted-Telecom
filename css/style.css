@@ -1,19 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
 	padding: 0;
 	margin: 0;
 }
 
-html, body {
-	height: 100%;
-}
-
-html, body {
-	background: linear-gradient(180deg, #ffffff 0%, #b1a1ed 100%);
+body {
+	background: linear-gradient(#ffffff 0%, #b1a1ed 100%);
 	font-family: "Poppins", serif;
 	font-weight: 400;
 	font-style: normal;
+}
+
+/* Partners Section */
+.partners-section h2 {
+	color: #000;
+	font-weight: bold;
+	font-family: "Rubik", sans-serif;
+}
+
+.partners-section p {
+	font-family: "Rubik", sans-serif;
 }
 
 /* Contact Us Form */
@@ -21,9 +28,17 @@ html, body {
 	padding: 50px 0;
 	text-align: center;
 }
+
 .contact-section h2 {
 	color: #000;
 	font-weight: bold;
+	font-family: "Rubik", sans-serif;
+}
+
+.contact-section p {
+	font-family: "Rubik", sans-serif;
+	font-weight: 500;
+	font-size: 1.3rem;
 }
 
 .contact-section .container {
