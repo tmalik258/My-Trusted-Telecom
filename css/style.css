@@ -12,6 +12,41 @@ body {
 	font-style: normal;
 }
 
+/* Steps Section */
+.steps-section {
+	font-family: "Rubik", sans-serif;
+}
+
+.steps-section > p {
+	font-style: italic;
+	font-weight: 600;
+	text-align: center;
+	font-size: 2rem;
+	color: #4F4F4F;
+}
+
+.steps-section .step {
+	display: flex;
+	gap: 6rem;
+}
+
+.steps-section .step .number {
+	width: 6rem;
+}
+
+.steps-section .step .step-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+	width: 50%;
+}
+
+.steps-section .step .step-details h2 {
+	color: #724CFF;
+	font-size: 3.5rem;
+}
+
 /* Partners Section */
 .partners-section h2 {
 	color: #000;
