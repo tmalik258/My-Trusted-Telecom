@@ -70,6 +70,10 @@ body {
 }
 
 /* Modified slides wrapper for peek effect */
+.slider-section {
+	overflow: hidden;
+}
+
 .slides-container {
 	position: relative;
 	/* overflow: hidden; */
