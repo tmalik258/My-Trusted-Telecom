@@ -124,6 +124,10 @@ body {
 }
 
 .slide-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1.2rem;
 	position: relative;
 	z-index: 2;
 	color: white;
@@ -263,6 +267,13 @@ body {
 
 .steps-section .step .step-details p {
 	font-size: 1.5rem;
+}
+
+@media screen and (width < 1200px) {
+	.slide {
+		min-width: 90%;
+		margin: 0 10px;
+	}
 }
 
 /* Partners Section */

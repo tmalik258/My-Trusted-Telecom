@@ -8,7 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let slideInterval; // Declare interval variable in wider scope
     
     // Calculate the slide width including margin
-    const slideWidth = 100; // 90% of container width
+    let slideWidth = 100; // 90% of container width
+
+	if (window.innerWidth < 1200) {
+		slideWidth = 90;
+	}
 
     // Initial position
     goToSlide(1);
@@ -34,17 +38,23 @@ document.addEventListener('DOMContentLoaded', function() {
     function goToSlide(n) {
         currentSlide = n;
 		let x = 13.3;
-		switch (currentSlide) {
-			case 0:
-				x = 4.5;
-				break;
-			case 2:
-				x = 22.1;
-				break;
-		
-			default:
-				break;
+		if (window.innerWidth > 1200) {
+			switch (currentSlide) {
+				case 0:
+					x = 4.5;
+					break;
+				case 2:
+					x = 22.1;
+					break;
+			
+				default:
+					break;
+			}
 		}
+		else {
+			x = 0;
+		}
+
         const offset = slideWidth * currentSlide + x;
         slides.style.transform = `translateX(-${offset}%)`;
         updateDots();
