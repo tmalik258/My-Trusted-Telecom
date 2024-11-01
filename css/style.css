@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
 	padding: 0;
@@ -10,6 +10,221 @@ body {
 	font-family: "Poppins", serif;
 	font-weight: 400;
 	font-style: normal;
+}
+
+/* Slider Section */
+.slider-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+.slider-header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.slider-header h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	color: #333;
+}
+
+.slider-header p {
+	color: #666;
+	line-height: 1.6;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Frame styling */
+.slider-frame {
+	position: relative;
+	width: 100%;
+	padding: 15px;
+	border-radius: 30px;
+	background: white;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Create curved border */
+.slider-frame::after {
+	content: '';
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	/* border: 2px solid rgba(255, 255, 255, 0.2); */
+	border-radius: 20px;
+	pointer-events: none;
+	z-index: 2;
+}
+
+/* Updated slider container */
+.slider {
+	position: relative;
+	border-radius: 20px;
+	/* overflow: hidden; */
+	aspect-ratio: 16/9;
+}
+
+/* Modified slides wrapper for peek effect */
+.slides-container {
+	position: relative;
+	/* overflow: hidden; */
+	border-radius: 20px;
+	height: 100%;
+}
+
+.slides {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	height: 100%;
+	width: 100%;
+}
+
+.slide {
+	min-width: 100%; /* Width of main slide */
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	margin: 0 50px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+/* Dark gradient overlay */
+.slide::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(
+		45deg,
+		rgba(0, 0, 0, 0.7),
+		rgba(0, 0, 0, 0.3)
+	);
+	z-index: 1;
+}
+
+/* Individual slide backgrounds */
+.slide:nth-child(1) {
+	background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80');
+}
+
+.slide:nth-child(2) {
+	background-image: url('https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=1200&q=80');
+}
+
+.slide:nth-child(3) {
+	background-image: url('https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1200&q=80');
+}
+
+.slide-content {
+	position: relative;
+	z-index: 2;
+	color: white;
+	padding: 60px;
+}
+
+.slide-title {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+
+.slide-subtitle {
+	font-size: 1.5rem;
+	opacity: 0.9;
+	margin-bottom: 0.5rem;
+}
+
+.slide-price {
+	font-size: 4rem;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+
+.slide-description {
+	font-size: 0.9rem;
+	opacity: 0.8;
+	max-width: 600px;
+	margin-bottom: 2rem;
+	line-height: 1.6;
+}
+
+.more-info-btn {
+	display: inline-block;
+	padding: 12px 30px;
+	background-color: #ff0000;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background-color 0.3s;
+}
+
+.more-info-btn:hover {
+	background-color: #e60000;
+}
+
+/* Updated navigation buttons */
+.slider-nav {
+	position: absolute;
+	width: calc(100% + 40px);
+	top: 50%;
+	left: -20px;
+	transform: translateY(-50%);
+	z-index: 3;
+	display: flex;
+	justify-content: space-between;
+	pointer-events: none;
+}
+
+.nav-btn {
+	width: 40px;
+	height: 40px;
+	border: none;
+	background: white;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	pointer-events: auto;
+	transition: transform 0.3s;
+}
+
+.nav-btn:hover {
+	transform: scale(1.1);
+}
+
+.dots {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 8px;
+	z-index: 3;
+}
+
+.dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.dot.active {
+	background: white;
 }
 
 /* Steps Section */
@@ -24,7 +239,7 @@ body {
 	font-weight: 600;
 	text-align: center;
 	font-size: 2rem;
-	color: #4F4F4F;
+	color: #4f4f4f;
 }
 
 .steps-section .steps-container {
@@ -44,7 +259,7 @@ body {
 }
 
 .steps-section .step .step-details h2 {
-	color: #724CFF;
+	color: #724cff;
 	font-size: 3.5rem;
 }
 
@@ -91,9 +306,10 @@ body {
 .contact-card {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	gap: 2rem;
 	height: 100%;
-	background-color: #B1A1ED;
+	background-color: #b1a1ed;
 	padding: 20px;
 	overflow: hidden;
 }
@@ -110,7 +326,9 @@ body {
 	gap: 1.3rem;
 }
 
-input, .form-control, .form-control:focus {
+input,
+.form-control,
+.form-control:focus {
 	color: #fff;
 	background: none;
 	outline: none;
@@ -139,7 +357,7 @@ textarea {
 
 .btn-dark {
 	border-radius: 5px;
-	background-color: #B1A1ED;
+	background-color: #b1a1ed;
 	border: none;
 	color: #fff;
 	/* font-weight: bold; */
@@ -159,14 +377,14 @@ textarea {
 .circle1 {
 	width: 269px;
 	height: 269px;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	bottom: -80px;
 	left: -100px;
 }
 .circle2 {
 	width: 138px;
 	height: 138px;
-	background-color: #EDA1C2;
+	background-color: #eda1c2;
 	bottom: -40px;
 	left: 6rem;
 }
@@ -181,7 +399,7 @@ textarea {
 .circle4 {
 	width: 269px;
 	height: 269px;
-	background-color: #C801F9;
+	background-color: #c801f9;
 	bottom: -6.3rem;
 	right: -7rem;
 }
