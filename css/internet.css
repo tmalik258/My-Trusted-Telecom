@@ -3,7 +3,7 @@
 }
 
 .internet-section .details h1 {
-	font-size: 4rem;
+	font-size: 3.5rem;
 	font-weight: 700;
 }
 
@@ -16,6 +16,112 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+@media screen and (width < 1200px) {
+	.internet-section .details h1 {
+		font-size: 3rem;
+		font-weight: 600;
+	}
+	
+	.internet-section .details p {
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (width < 992px) {
+	.internet-section .details h1 {
+		font-size: 2.2rem;
+		font-weight: 600;
+	}
+	
+	.internet-section .details p {
+		font-size: 1.1rem;
+	}
+}
+
+@media screen and (width < 768px) {
+	.internet-section .details h1 {
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+	
+	.internet-section .details p {
+		font-size: 1rem;
+	}
+}
+
+/* Packages/Bundles */
+.bundles-section {
+	margin-block: 8rem;
+}
+
+.bundles-section .bundle {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 550px;
+	height: 700px;
+	border-radius: 2rem;
+	position: relative;
+	padding: 3rem;
+	overflow: hidden;
+}
+
+.bundles-section .bundle .bundle-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.bundles-section .bundle h2{
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.bundles-section .bundle h3{
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+@media screen and (width < 1400px) {
+	.bundles-section .bundle {
+		width: fit-content;
+		height: 600px;
+		/* padding: 2rem; */
+	}
+
+	.bundles-section .bundle h2{
+		font-size: 2.5rem;
+		font-weight: 600;
+	}
+	
+	.bundles-section .bundle h3{
+		font-size: 3rem;
+		font-weight: 700;
+	}
+}
+
+@media screen and (width < 1200px) {
+	.bundles-section .bundle {
+		width: fit-content;
+		height: 600px;
+		padding: 2rem;
+	}
+
+	.bundles-section .bundle h2{
+		font-size: 2rem;
+		font-weight: 600;
+	}
+	
+	.bundles-section .bundle h3{
+		font-size: 2.5rem;
+		font-weight: 700;
+	}
 }
 
 /* Testimonial */
@@ -147,40 +253,3 @@
 		display: none;
 	}
 }
-
-.bundles-section {
-	margin-block: 8rem;
-}
-
-.bundles-section .bundle {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 550px;
-	height: 700px;
-	border-radius: 2rem;
-	position: relative;
-	padding: 3rem;
-	overflow: hidden;
-}
-
-.bundles-section .bundle .bundle-img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-}
-
-.bundles-section .bundle h2{
-	font-size: 3.5rem;
-	font-weight: 600;
-}
-
-.bundles-section .bundle h3{
-	font-size: 4.5rem;
-	font-weight: 700;
-}
-
