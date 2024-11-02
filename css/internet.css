@@ -60,6 +60,10 @@
 	margin-block: 8rem;
 }
 
+.bundles-section * {
+	z-index: 2;
+}
+
 .bundles-section .bundle {
 	display: flex;
 	flex-direction: column;
@@ -71,6 +75,23 @@
 	position: relative;
 	padding: 3rem;
 	overflow: hidden;
+	z-index: 2;
+}
+
+.bundles-section .bundle::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(
+		45deg,
+		rgba(0, 0, 0, 0.7),
+		rgba(0, 0, 0, 0.3)
+	);
+	/* opacity: .4; */
+	z-index: 1;
 }
 
 .bundles-section .bundle .bundle-img {
@@ -79,7 +100,7 @@
 	left: 0;
 	object-fit: cover;
 	opacity: .9;
-	filter: blur(3px);
+	filter: blur(2px);
 	width: 100%;
 	height: 100%;
 	z-index: -1;
