@@ -79,7 +79,7 @@
 	left: 0;
 	object-fit: cover;
 	opacity: .9;
-	filter: blur(2px);
+	filter: blur(3px);
 	width: 100%;
 	height: 100%;
 	z-index: -1;
@@ -119,10 +119,10 @@
 		font-weight: 600;
 	}
 	
-	.bundles-section .bundle h3{
+	/* .bundles-section .bundle h3{
 		font-size: 3rem;
 		font-weight: 700;
-	}
+	} */
 }
 
 @media screen and (width < 1200px) {
@@ -136,10 +136,10 @@
 		font-weight: 500;
 	}
 	
-	.bundles-section .bundle h3{
+	/* .bundles-section .bundle h3{
 		font-size: 2.5rem;
 		font-weight: 600;
-	}
+	} */
 }
 
 @media screen and (width < 992px) {
@@ -155,9 +155,9 @@
 		font-size: 1.5rem;
 	}
 	
-	.bundles-section .bundle h3{
+	/* .bundles-section .bundle h3{
 		font-size: 2rem;
-	}
+	} */
 }
 
 /* Testimonial */
