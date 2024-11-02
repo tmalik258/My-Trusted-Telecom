@@ -108,6 +108,10 @@
 	font-weight: 400;
 }
 
+.bundles-section .bundle p {
+	font-size: .8rem;
+}
+
 @media screen and (width < 1400px) {
 	.bundles-section .bundle {
 		width: fit-content;
