@@ -350,7 +350,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: flex-start;
+	/* align-items: flex-start; */
 	gap: 2rem;
 }
 
@@ -363,7 +363,45 @@
 	font-size: 1.5rem;
 }
 
+.steps-section .step .step-details .more-info-btn {
+	font-size: 1.8rem;
+	align-self: flex-start;
+	position: relative;
+	left: 12.7rem;
+}
+
+@media screen and (width < 1600px) {
+	.steps-section .step .step-details .more-info-btn {
+		font-size: 1.5rem;
+		align-self: flex-start;
+		position: relative;
+		left: 8.3rem;
+	}
+}
+
+@media screen and (width < 1400px) {
+	.steps-section .step .step-details .more-info-btn {
+		font-size: 1.4rem;
+		align-self: flex-start;
+		position: relative;
+		left: 5rem;
+	}
+}
+
+@media screen and (width < 1200px) {
+	.steps-section .step .step-details .more-info-btn {
+		font-size: 1.2rem;
+		align-self: flex-start;
+		position: relative;
+		left: 0rem;
+	}
+}
+
 @media screen and (width < 992px) {
+	.steps-section .step .step-details .more-info-btn {
+		font-size: 1rem;
+	}
+
 	.steps-section .steps-container {
 		gap: 3rem;
 	}

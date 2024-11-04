@@ -1,15 +1,21 @@
 .header-container {
 	background: #000;
-	position: sticky;
-	top: 0;
-	z-index: 100;
-	height: 100px;
-	transition: height 0.3s ease;
 }
 
-.header-container.shrink {
-	height: 80px; 
+@media screen and (width > 768px) {
+	.header-container {
+		position: sticky;
+		top: 0;
+		height: 100px;
+		z-index: 100;
+		transition: height 0.3s ease;
+	}
+	
+	.header-container.shrink {
+		height: 80px; 
+	}
 }
+
 
 .header-container .nav-logo {
 	transition: width 0.3s ease;
